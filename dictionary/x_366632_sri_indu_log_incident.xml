@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element extends="task" label="log incident" max_length="40" name="x_366632_sri_indu_log_incident" sizeclass="5" type="collection">
         <element label="affected user" max_length="32" name="affected_user" reference="sys_user" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
+        <element choice="1" label="Category" max_length="100" name="category" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Hardware" value="hw"/>
+                <element inactive_on_update="false" label="Netwrok" value="nw"/>
+                <element inactive_on_update="false" label="Software" value="sw"/>
+            </choice>
+        </element>
         <element default="Short Desc" label="sriindudesc" max_length="100" name="sriindudesc" type="string"/>
         <element label="Sri Indu Short Description" max_length="100" name="sri_indu_short_description" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Start Date" max_length="40" name="u_glide_date_1" type="glide_date"/>
