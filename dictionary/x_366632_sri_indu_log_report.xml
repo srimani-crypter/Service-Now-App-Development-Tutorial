@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="task" label="log report" max_length="40" name="x_366632_sri_indu_log_report" type="collection">
+        <element default="User information" label="User info" max_length="100" name="user_info" type="string"/>
+    </element>
+</database>

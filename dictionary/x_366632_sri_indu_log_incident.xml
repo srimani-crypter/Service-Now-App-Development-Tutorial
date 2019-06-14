@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="task" label="log incident" max_length="40" name="x_366632_sri_indu_log_incident" sizeclass="5" type="collection">
+        <element label="affected user" max_length="32" name="affected_user" reference="sys_user" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
+        <element default="Short Desc" label="sriindudesc" max_length="100" name="sriindudesc" type="string"/>
+        <element label="Sri Indu Short Description" max_length="100" name="sri_indu_short_description" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Start Date" max_length="40" name="u_glide_date_1" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" label="Start date" mandatory="true" max_length="40" name="u_glide_date_3" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" label="End Date" mandatory="true" max_length="40" name="u_glide_date_4" type="glide_date"/>
+        <element choice="1" default="Select Your choice" label="select choice" max_length="100" name="x_366632_sri_indu_select_choice" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Email" value="email"/>
+                <element inactive_on_update="false" label="Facebook" value="Facebook Chat Application"/>
+                <element inactive_on_update="false" label="Twitter Chat" value="Twitter Chat Application."/>
+            </choice>
+        </element>
+    </element>
+</database>
