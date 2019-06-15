@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_366632_sri_indu.HelloWorld</api_name>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>HelloWorld</name>
+        <script><![CDATA[var HelloWorld = Class.create();
+HelloWorld.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	helloWorld: function(){
+		var HelloWorld = Class.create();
+HelloWorld.prototype = Object.extendsObject(AbstractAjaxProcessor, {
+   helloWorld:function() { return "Hello " + this.getParameter('sysparm_user_name') + "!"; } ,
+   _privateFunction: function() { // this function is not client callable     
+    }
+ });
+	},
+    type: 'HelloWorld'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-06-15 05:20:50</sys_created_on>
+        <sys_id>2c2da6e9db0e3300948bf53a2996190a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>HelloWorld</sys_name>
+        <sys_package display_value="Sri Indu IT" source="x_366632_sri_indu">2adb7550db023300948bf53a2996198b</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Sri Indu IT">2adb7550db023300948bf53a2996198b</sys_scope>
+        <sys_update_name>sys_script_include_2c2da6e9db0e3300948bf53a2996190a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-06-15 05:20:50</sys_updated_on>
+    </sys_script_include>
+</record_update>
